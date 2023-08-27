@@ -1,0 +1,299 @@
+/* margin and padding for everything */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body and html  */
+body, html{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #383C3F;
+}
+
+/* contains left and right side  */
+.content {
+    display: flex;
+    min-height: 100%;
+    max-height: fit-content;
+    
+}
+
+/* left side styling  */
+
+/* full left side */
+#left-side {
+    display: flex;
+    flex-direction: column;
+    background: #383C3F;
+    overflow-x: auto;
+    min-height: 100%;
+    max-height: fit-content;
+    padding-top: 50px;
+    width: 30%;
+    gap: 20px;
+
+}
+.leftBtnDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* left projects heading */
+.Projects {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 2px;
+    height: 5%;
+}
+
+
+/* left horizontal line */
+.hr-line {
+    border: 2px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+/* enter project details styling */
+
+
+/* project details div */
+.details-div{
+
+    display: none;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 15px;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #383C3F;
+    border: 1px solid #000000;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+}
+
+/* input field styling  */
+
+.input1 {
+    display: flex;
+    width: 18vw;
+    height: 5vh;
+    background-color: #444A4D;
+    border-radius: 15px;
+    color: white;
+    padding-left: 20px;
+    border: 2px solid grey;;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.input1::placeholder{
+    color: white;
+}
+.input2 {
+    display: flex;
+    width: 18vw;
+    height: 5vh;
+    background-color: #444A4D;
+    border: 2px solid grey;;
+    border-radius: 15px;
+    color: white;
+    padding-left: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.input2::placeholder{
+    color: white;
+}
+
+/* right section of web app */
+#right-side {
+    display: flex;
+    flex-direction: column;
+    background: #2E3438;
+    overflow-y: auto;
+    gap: 10px;
+    width: 70%;
+    min-height: 100%;
+    max-height: fit-content;
+    
+}
+
+.right-div{
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-name{
+    letter-spacing: 5px;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    width: 50%;
+}
+
+.rightBtnDiv{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 44%;
+    gap: 20px;
+
+}
+
+
+.right-hr{
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid #000000;
+}
+
+
+
+.task-detailsdiv{
+    display: none;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 15px;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #383C3F;
+    border: 1px solid #000000;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.task-title{
+    display: flex;
+    width: 18vw;
+    height: 5vh;
+    background-color: #444A4D;
+    border-radius: 15px;
+    color: white;
+    padding-left: 20px;
+    border: 2px solid grey;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.task-title::placeholder{
+    color: white;
+}
+
+.task-description {
+    display: flex;
+    width: 18vw;
+    height: 5vh;
+    background-color: #444A4D;
+    border: 2px solid grey;;
+    border-radius: 15px;
+    color: white;
+    padding-left: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 20px;
+}
+.task-description::placeholder{
+    color: white;
+}
+.task-date{
+    display: flex;
+    width: 18vw;
+    height: 5vh;
+    background-color: #444A4D;
+    border-radius: 15px;
+    color: white;
+    padding-left: 20px;
+    border: 2px solid grey;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.task-date[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    padding-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+.project-uldiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.list-group{
+display: flex;
+
+width: 80%;
+gap: 20px;
+justify-content: center;
+text-align: center;
+text-transform: capitalize;
+}
+.list-x{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.delete-img{
+    width: 24px;
+    height: 32px;
+}
+.right-task-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
+    justify-content: center;
+}
+.right-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+}
+.list-y{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    
+}
+.delete-task-btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.right-addbtn{
+    display: none;
+}
+.right-delete-btn{
+    display: none;
+}
